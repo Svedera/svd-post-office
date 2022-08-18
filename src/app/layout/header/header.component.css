@@ -1,0 +1,14 @@
+:host {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  :host {
+    display: flex;
+  }
+}
+
+.svd-navbar.navbar {
+  background-color: var(--svd-panelsColor);
+  color: var(--svd-textColor);
+}

@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;900&display=swap);
+@import '../node_modules/bootstrap/dist/css/bootstrap.css';
+@import '~@fortawesome/fontawesome-free/css/all.css';
+@import 'styles/variables.css';
+@import 'styles/fonts.css';
+
+* {
+  box-sizing: border-box;
+}
+
+.favicon {
+  background-color: var(--svd-panelsColor);
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+}
+
+body {
+  font-size: var(--svd-rootFontSize);
+}
+
+body,
+html {
+  background: var(--svd-backgroundColor);
+  color: var(--svd-textColor);
+  font-family: var(--svd-textFont);
+  height: 100%;
+  margin: 0 0 0 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--svd-font)
+}
+
+h1 {
+  font-size: 2.8125rem
+}
+
+h1,
+h2 {
+  text-transform: uppercase
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p a {
+  color: var(--svd-highlightColor)
+}
+
+@media screen and (max-width: 960px) {
+  h1 {
+    font-size: 2.25rem
+  }
+
+  h2 {
+    font-size: 1.5rem
+  }
+}
+
+.text-center {
+  text-align: center
+}
+
+.text-highlight {
+  color: var(--svd-highlightColor)
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.sharp {
+  border-radius: 0;
+}
+
+.btn.sharp {
+  box-shadow: none;
+}

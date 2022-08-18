@@ -1,0 +1,19 @@
+:root {
+  --svd-font: BoosterNextFY;
+  --svd-textFont: "Open Sans";
+  --svd-rootFontSize: 16px;
+
+  --svd-menuWidth: 220px;
+  --svd-maxWidth: 1000px;
+  --svd-logoWidth: 7em;
+
+  --svd-backgroundColor: #E6F4F1;
+  --svd-panelsColor: #66A3BB;
+
+  --svd-highlightColor: #466F81;
+  --svd-secondaryColor: #8F7158;
+  --svd-linkHoverColor: #EEE8A9;
+
+  --svd-textColor: #253A47;
+  --svd-alternateTextColor: #fff;
+}

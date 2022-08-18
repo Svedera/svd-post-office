@@ -1,0 +1,35 @@
+<h1 class="text-center">Shipments list</h1>
+<ng-container *ngIf="shipments && shipments.length > 0 ; else empty">
+  <table class="table text-center table-striped table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Airport</th>
+        <th scope="col">Flight number</th>
+        <th scope="col">Flight date</th>
+        <th scope="col">Bags</th>
+        <th scope="col">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr role="button"
+          *ngFor="let shipment of shipments"
+          (click)="shipmentSelected(shipment.shipmentId)">
+        <td>{{shipment.shipmentNumber | uppercase}}</td>
+        <td>{{shipment.airport.code}}</td>
+        <td>{{shipment.flightNumber| uppercase}}</td>
+        <td>{{shipment.flightDate | date :'short'}}</td>
+        <td>{{shipment.bagCount}}</td>
+        <td>{{shipment.finalized | finalizedTitle}}</td>
+      </tr>
+    </tbody>
+  </table>
+</ng-container>
+
+<ng-template #empty>
+
+  <div class="text-center">
+    Shipments list is empty.
+  </div>
+
+</ng-template>

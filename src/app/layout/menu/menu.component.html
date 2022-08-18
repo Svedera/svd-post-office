@@ -1,0 +1,21 @@
+<div class="col">
+  <div class="d-flex justify-content-center">
+
+    <img [routerLink]="['/']"
+         aria-label="svd logo"
+         class="logo center-block"
+         role="button"
+         src="/assets/images/logo.png">
+
+  </div>
+  <div class="menu-item d-flex justify-content-center mt-4">
+
+    <a routerlinkactive="active"
+       routerLink="/{{AppRouts.Shipments}}"
+       (click)="layout.closeMenu()">
+      Shipments
+      <i class="{{ Icon.Article}} md"></i>
+    </a>
+
+  </div>
+</div>
