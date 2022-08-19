@@ -1,4 +1,4 @@
-import { FinalizedTitlePipe } from './finalized.pipe';
+import { FinalizedTitlePipe } from './finalized-title.pipe';
 
 describe('FinalizedPipe', () => {
   it('create an instance', () => {
